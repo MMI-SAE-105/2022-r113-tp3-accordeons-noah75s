@@ -9,5 +9,26 @@
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      <section>
+        
+        <div x-data="{ open: false }">
+          <button @click="open = ! open">bouton 1</button>
+       
+          <span x-show="open" x-transition>
+              Hello 👋
+          </span>
+      </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, repudiandae iste mollitia excepturi inventore provident obcaecati tempore praesentium error reiciendis architecto quam maiores tenetur eum repellat eius porro quis est!</p>
+      </section>
+      <section x-data="{isOpen:true}">
+        <button @click="isOpen=!isOpen">bouton 2</button>
+        <p x-show="isOpen">Cum nam excepturi sed, commodi voluptatibus expedita dignissimos vel corporis beatae laborum porro, aliquid asperiores suscipit dolores velit ipsa cumque eum ducimus. Iusto rerum accusamus ab eius laudantium magni voluptatibus!</p>
+      </section>
+      <section x-data="{isOpen:true}">
+        <button @click="isOpen=!isOpen">bouton 3</button>
+        <p x-show="isOpen">Dolor consequatur doloremque nesciunt unde quos sint natus ad pariatur perspiciatis eius quasi totam, minus corporis beatae assumenda? Cum quasi perspiciatis error pariatur quibusdam laborum aperiam animi deleniti eveniet explicabo.</p>
+      </section>
+    </div>
   </body>
 </html>
