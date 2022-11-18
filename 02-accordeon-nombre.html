@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-  </head>
-  <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="{isOpen:1}">
-    </div>
-      <section>
-        <button @click="isOpen=1">bouton 1</button>
-        <p x-show="isOpen===1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, doloribus quam. Natus expedita consequatur repellendus rerum quis ipsum culpa! At modi quo laboriosam quidem magni, culpa mollitia quis tempora tenetur?</p>
-      </section>
-      <section>
-        <button @click="isOpen=2">bouton 2</button>
-        <p x-show="isOpen===2">Omnis autem ipsam laboriosam illo qui fugiat sed magni accusamus nemo rerum beatae quam consequuntur vero tempora itaque, hic est deserunt maxime doloribus totam id? Qui, corporis? Ad, aliquid animi?</p>
-      </section>
-      <section>
-        <button @click="isOpen=3">bouton 3</button>
-        <p x-show="isOpen===3">Delectus aut, ad quo fuga excepturi error aliquid ipsam animi suscipit odio, aperiam at beatae architecto libero nesciunt quisquam unde voluptatem debitis. Sit odio explicabo quas quidem, magni mollitia beatae.</p>
-      </section>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+  <div class="accordeon" x-data="{isOpen:1}">
+
+    <section>
+      <button @click="isOpen=1">bouton 1</button>
+      <p x-show="isOpen===1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, doloribus quam. Natus
+        expedita consequatur repellendus rerum quis ipsum culpa! At modi quo laboriosam quidem magni, culpa mollitia
+        quis
+        tempora tenetur?</p>
+    </section>
+    <section>
+      <button @click="isOpen=2">bouton 2</button>
+      <p x-show="isOpen===2">Omnis autem ipsam laboriosam illo qui fugiat sed magni accusamus nemo rerum beatae quam
+        consequuntur vero tempora itaque, hic est deserunt maxime doloribus totam id? Qui, corporis? Ad, aliquid animi?
+      </p>
+    </section>
+    <section>
+      <button @click="isOpen=3">bouton 3</button>
+      <p x-show="isOpen===3">Delectus aut, ad quo fuga excepturi error aliquid ipsam animi suscipit odio, aperiam at
+        beatae architecto libero nesciunt quisquam unde voluptatem debitis. Sit odio explicabo quas quidem, magni
+        mollitia
+        beatae.</p>
+    </section>
+  </div>
+</body>
+
 </html>
